@@ -1,13 +1,11 @@
-// arquivo de rotas
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import App from './App';
+import Home from "./pages/Home";
 
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/list" element={<div>Lista</div>} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
